@@ -2,7 +2,7 @@
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=zlib-musl
-pkgver=1.2.8
+pkgver=1.3.1
 pkgrel=3
 pkgdesc='Compression library implementing the deflate compression method found in gzip and PKZIP'
 arch=('i686' 'x86_64')
@@ -10,8 +10,9 @@ license=('custom')
 url="http://www.zlib.net/"
 makedepends=('musl')
 options=('staticlibs')  # needed by binutils testsuite
-source=("http://zlib.net/current/zlib-${pkgver}.tar.gz")
-md5sums=('44d667c142d7cda120332623eab69f40')
+source=("http://zlib.net/zlib-${pkgver}.tar.gz")
+md5sums=('9855b6d802d7fe5b7bd5b196a2271655')
+
 
 prepare() {
 	cd ${srcdir}/zlib-$pkgver
